@@ -20,12 +20,12 @@ const Footer = () => {
           <span
             className="emoji"
             role="img"
-            aria-label="heart"
+            aria-label="skull"
             aria-hidden="false"
           >
-            
+            🔥
           </span>{' '}
-          by Floki.
+          by Floki 2022©
         </h4>
       </div>
     </footer>
