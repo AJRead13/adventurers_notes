@@ -56,7 +56,7 @@ const ThoughtForm = () => {
 
   return (
     <div>
-      <h3>What's on your techy mind?</h3>
+      <h3>What's on your mind?</h3>
 
       <p
         className={`m-0 ${
@@ -92,7 +92,7 @@ const ThoughtForm = () => {
 
         <div className="col-12 col-lg-3">
           <button className="btn btn-primary btn-block py-3" type="submit">
-            Add Thought
+            Add Note
           </button>
         </div>
         {error && (

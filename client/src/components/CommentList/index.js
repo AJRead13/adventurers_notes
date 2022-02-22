@@ -3,7 +3,7 @@ import React from 'react';
 const CommentList = ({ comments = [] }) => {
   console.log(comments);
   if (!comments.length) {
-    return <h3>No Comments Yet</h3>;
+    return <h3>No Notes Yet</h3>;
   }
 
   return (
@@ -12,7 +12,7 @@ const CommentList = ({ comments = [] }) => {
         className="p-5 display-inline-block"
         style={{ borderBottom: '1px dotted #1a1a1a' }}
       >
-        Comments
+        Notes
       </h3>
       <div className="flex-row my-4">
         {comments &&
@@ -20,7 +20,7 @@ const CommentList = ({ comments = [] }) => {
             <div key={comment._id} className="col-12 mb-3 pb-3">
               <div className="p-3 bg-dark text-light">
                 <h5 className="card-header">
-                  An anonymous user commented{' '}
+                  A fellow Adventurer commented{' '}
                   <span style={{ fontSize: '0.825rem' }}>
                     on {comment.createdAt}
                   </span>

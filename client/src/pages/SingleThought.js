@@ -11,7 +11,7 @@ import CommentForm from '../components/CommentForm';
 import { QUERY_SINGLE_THOUGHT } from '../utils/queries';
 
 const SingleThought = () => {
-  // TODO: Add code here to retrieve the query parameter `thoughtId` from the URL
+  
   const { thoughtId } = useParams();
 
   const { loading, data } = useQuery(QUERY_SINGLE_THOUGHT, {
@@ -29,7 +29,7 @@ const SingleThought = () => {
       <h3 className="card-header bg-dark text-light p-2 m-0">
         {thought.thoughtAuthor} <br />
         <span style={{ fontSize: '1rem' }}>
-          had this thought on {thought.createdAt}
+          took this note on {thought.createdAt}
         </span>
       </h3>
       <div className="bg-light py-4">
